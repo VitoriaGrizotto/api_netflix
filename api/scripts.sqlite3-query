@@ -1,0 +1,20 @@
+-- database: ../db.sqlite3
+
+CREATE TABLE generoK (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    generofilme varchar(255)
+);
+   
+
+INSERT INTO generoK (generofilme) 
+VALUES 
+('Aventura'),
+('Ficção Científica'),
+('Drama'),
+('Romance'),
+('Ação'),
+('Crime'),
+('Animação'),
+('Terror');
+
+UPDATE api_filmes SET generoK = '';
